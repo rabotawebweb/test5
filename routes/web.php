@@ -23,5 +23,5 @@ Route::post('disneyplus', 'DisneyplusController@store')->name('disneyplus.store'
 Route::get('disneyplus/list', 'DisneyplusController@index')->name('disneyplus.index');
 Route::get('export', 'DisneyplusController@export');
 
-Route::get('checksplans/export', 'ChecksplanController@export');
+Route::any('checksplans/export', 'ChecksplanController@export');
 Route::resource('checksplans', 'ChecksplanController');
